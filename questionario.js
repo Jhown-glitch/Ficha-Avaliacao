@@ -54,5 +54,6 @@ function guardarResposta (idResposta) {
 }
 
 function mostrarProxima (id) {
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(id).style.display='block';
+    console.log('funcionou')
 };
