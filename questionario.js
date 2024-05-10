@@ -1,7 +1,7 @@
 var respostas = {};
 
 function validarAvaliacao () {
-    var dataAvaliacaoInput = document.getElementById('dataAvaliacao');
+    var dataAvaliacaoInput = document.getElementById('resposta1');
     var dataAvaliacao = new Date(dataAvaliacaoInput.value);
     var hoje = new Date();
 
@@ -15,12 +15,12 @@ function validarAvaliacao () {
     }
 
     //Se a data for válida, avance
-    guardarResposta('dataAvaliacao');
-    mostrarProxima('perguntaNome');
+    guardarResposta('resposta1');
+    mostrarProxima('pergunta2');
 }
 
 function validarDataNascimento() {
-    var dataNascimentoInput = document.getElementById('dataNascimento');
+    var dataNascimentoInput = document.getElementById('resposta3');
     var dataNascimento = new Date(dataNascimentoInput.value);
     var hoje = new Date();
     var idade = hoje.getFullYear() - dataNascimento.getFullYear();
@@ -37,13 +37,14 @@ function validarDataNascimento() {
     }
 
     //Se a idade estiver dentro do intervalo, seguir para a próxima pergunta
-    guardarResposta('dataNascimento');
+    guardarResposta('resposta3');
+    mostrarProxima('pergunta4');
 }
 
 function guardarRespostaNome () {
-    var nomeCompleto = document.getElementById('nomeCompleto').value;
+    var nomeCompleto = document.getElementById('resposta2').value;
     respostas['nomeCompleto'] = nomeCompleto;
-    mostrarProxima('perguntaNascimento');
+    mostrarProxima('pergunta3');
 }
 
 function guardarResposta (idResposta) {
@@ -55,5 +56,5 @@ function guardarResposta (idResposta) {
 
 function mostrarProxima (id) {
     document.getElementById(id).style.display='block';
-    console.log('funcionou')
+    console.log(id)
 };

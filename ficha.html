@@ -14,46 +14,46 @@
         <div>
             <h1>Identificação</h1>
             <div id="pergunta1">
-                <p>Data da Avaliação: <input type="date" id="dataAvaliacao" required></p>
+                <p>Data da Avaliação: <input type="date" id="resposta1" required></p>
                 <button onclick="validarAvaliacao()">Próximo</button>
             </div>
 
-            <div class="question" id="perguntaNome">
+            <div class="question" id="pergunta2">
                 <p>Qual é o seu nome?</p>
-                <input type="text" id="nomeCompleto" required>
+                <input type="text" id="resposta2" required>
                 <button onclick="guardarRespostaNome()">Próximo</button>
             </div>
 
-            <div class="question" id="perguntaNascimento">
-                <p>Data de Nascimento: <input type="date" id="dataNascimento" required></p>
+            <div class="question" id="pergunta3">
+                <p>Data de Nascimento: <input type="date" id="resposta3" required></p>
                 <button onclick="validarDataNascimento()">Próximo</button>
             </div>
 
-            <div class="question" id="pergunta2">
+            <div class="question" id="pergunta4">
                 <p>Qual é o seu sexo?</p>
-                <select id="sexo" required>
+                <select id="resposta4" required>
                     <option value="nonSelect" disabled selected>-- Selecione uma opção --</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                 </select>
-                <button onclick="guardarResposta('sexo')">Próximo</button>
-            </div>
-
-            <div class="question" id="pergunta3">
-                <p>Número para contato:</p>
-                <input type="tel" id="resposta3" required>
-                <button onclick="guardarResposta('resposta3')">Próximo</button>
-            </div>
- 
-            <div class="question" id="pergunta4">
-                <p>Insira seu endereço completo:</p>
-                <input type="text" id="reposta4" required>
-                <button onclick="guardarResposta('reposta4')">Próximo</button>
+                <button onclick="guardarResposta('resposta4')">Próximo</button>
             </div>
 
             <div class="question" id="pergunta5">
+                <p>Número para contato:</p>
+                <input type="tel" id="resposta5" required>
+                <button onclick="guardarResposta('resposta5')">Próximo</button>
+            </div>
+ 
+            <div class="question" id="pergunta6">
+                <p>Insira seu endereço completo:</p>
+                <input type="text" id="resposta6" required>
+                <button onclick="guardarResposta('resposta6')">Próximo</button>
+            </div>
+
+            <div class="question" id="pergunta7">
                 <p>Estado Civil</p>
-                <select id="estadoCivil" required>
+                <select id="resposta7" required>
                     <option value="nonSelect" disabled selected>-- Selecione uma opção --</option>
                     <option value="casado">Casado(a)</option>
                     <option value="divorcio">Divorciado(a)</option>
@@ -61,16 +61,16 @@
                     <option value="solteiro">Solteiro(a)</option>
                     <option value="uniaoEstavel">União Estável</option>
                 </select>
-                <button onclick="guardarResposta('estadoCivil')">Próximo</button>
+                <button onclick="guardarResposta('resposta7')">Próximo</button>
             </div>
 
-            <div class="question" id="pergunta6">
+            <div class="question" id="pergunta8">
                 <p>Informe seu diagnóstico clínico:</p>
-                <input type="text" id="resposta6" required>
-                <button onclick="guardarResposta('resposta6')">Finalizar</button>
+                <input type="text" id="resposta8" required>
+                <button onclick="guardarResposta('resposta8')">Finalizar</button>
             </div>
         </div>
     </main>
-    <script src="questionario.js"></script>
+    <script defer src="questionario.js"></script>
 </body>
 </html>
