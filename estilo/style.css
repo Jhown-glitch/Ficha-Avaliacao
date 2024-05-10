@@ -1,5 +1,68 @@
 @charset "UTF-8";
 
+:root {
+    --fonte-principal: "Montserrat", Helvetica, sans-serif;
+    --fonte-secundaria: "Teachers", Arial, sans-serif;
+    --cor-principal: #98D168;
+    --cor-secundária: #6E984C;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-secundaria);
+    background-image: radial-gradient(var(--cor-principal), var(--cor-secundária));
+    height: 100vh;
+    line-height: 2em;
+}
+
+main {
+    min-width: 300px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.478);
+}
+
+main > p {
+    font-size: 1.3em;
+}
+
+.destaque {
+    font-weight: bold;
+    color: var(--cor-secundária);
+}
+
+h1 {
+    font-family: var(--fonte-principal);
+}
+
+div {
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div p {
+    font-size: 20px;
+}
+
 div.question {
     display: none;
+}
+
+input {
+    transition-duration: 500ms;
+}
+
+input:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.412);
+    font-size: 16px;
 }
