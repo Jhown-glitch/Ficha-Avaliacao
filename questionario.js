@@ -6,8 +6,8 @@ function validarAvaliacao () {
     var hoje = new Date();
 
     //Configura as datas para remover a hora e evitar inconsistências de fuso horário
-    dataAvaliacao.setHours(0, 0, 0, 0);
-    hoje.setHours(0, 0, 0, 0);
+    //dataAvaliacao.setHours(0, 0, 0, 0);
+    //hoje.setHours(0, 0, 0, 0);
 
     if (dataAvaliacao > hoje) {
         alert("A data da avaliação deve ser igual ou anterio à data de hoje!");
